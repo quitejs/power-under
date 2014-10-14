@@ -1,0 +1,16 @@
+_ = require '../power'
+module.exports = class TestPower
+  cutLast: ->
+    str = 'abc ?, ?,'
+    str = _.cutLast str, ','
+    _.debug str
+
+  log: ->
+    _.log 'ok'
+    _.trace('hello', 'world')
+    _.debug('debug')
+    _.warn('debug')
+    _.info('debug')
+    _.error('debug')
+
+

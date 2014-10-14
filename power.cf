@@ -1,0 +1,30 @@
+_ = require 'underscore'
+logger = require('tracer').colorConsole()
+string = require 'underscore.string'
+Duration = require 'duration'
+
+add = (obj) ->
+  _.extend _, obj
+
+add logger
+add string
+add util = 
+  unCapitalize: (string) ->
+    "#{string[0].toLowerCase()}#{string[1..]}"
+
+  cutLast: (str, sign) ->
+    if(index = str.lastIndexOf(sign)) < 0
+      str
+    else
+      str[...index]
+
+  timeStart: ->
+    @_start = new Date()
+
+
+  timeEnd: ->
+    duration = new Duration @_start, new Date()
+    _.debug "program takes: #{duration.milliseconds} ms"
+
+# _.log = ->
+module.exports = _
