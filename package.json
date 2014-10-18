@@ -1,20 +1,26 @@
 {
   "name": "power-under",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "expand underscore.js",
   "main": "power.cf",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    'underscore',
-    'tracer',
-    'duration'
+    "underscore",
+    "tracer",
+    "duration"
   ],
   "author": "michael-lu",
+  "email": "michael.lu.cn@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "underscore": "~1.7.0",
-    "tracer": "~0.7.3"
+    "duration": "^0.2.0",
+    "tracer": "~0.7.3",
+    "underscore": "~1.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quitejs/power-under.git"
   }
 }
